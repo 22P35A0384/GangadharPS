@@ -1,4 +1,4 @@
-import Adityastd from '../controllers/adityastd';
+import Adityastd from '../controllers/adityastd.js';
 import express from 'express';
 const Router = express.Router()
 
