@@ -25,6 +25,7 @@ import Adityaloginsapp from './src/routers/adityaloginsrouter.js';
 import Chatbotapp from './src/routers/chatbotrouter.js';
 import Spotlightapp from './src/routers/spotlightrouter.js';
 import Adityaimgapp from './src/routers/adityaphotosrouter.js';
+import Adityastdapp from './src/routers/adityastdrouter.js'
 
 const app = express();
 app.use(bodyParser.json({ limit: '50mb' }));
@@ -72,8 +73,9 @@ app.use('/api/payment/',Paymentsapp);
 app.use('/',Resultapp);
 app.use('/',Adityaloginsapp);
 app.use('/',Chatbotapp);
-app.use('/',Spotlightapp)
-app.use('/',Adityaimgapp)
+app.use('/',Spotlightapp);
+app.use('/',Adityaimgapp);
+app.use('/',Adityastdapp);
 
 // Testing Space...... (After Sucessfully Tested Then Put The Code To Controllers And Routers, Finally Import In The Actual Production Code)
 
